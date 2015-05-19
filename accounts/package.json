@@ -1,0 +1,31 @@
+{
+  "name": "accounts-module",
+  "version": "0.0.1",
+  "description": "accounts module with browserify",
+  "main": "js/app.js",
+  "scripts": {
+    "start": "watchify -o js/bundle.js -v -d .",
+    "build": "browserify . | uglifyjs -cm > js/bundle.min.js"
+  },
+  "author": "Arman Kamal",
+  "license": "proprietary",
+  "devDependencies": {
+    "browserify": "~9.0.8",
+    "envify": "~3.4.0",
+    "react": "~0.13.2",
+    "reactify": "~1.1.0",
+    "watchify": "~3.2.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  },
+  "dependencies": {
+    "react": "~0.13.2",
+    "underscore": "~1.8.3",
+    "react-router": "~0.13.2",
+    "node-jspdf": "0.0.3"
+  }
+}

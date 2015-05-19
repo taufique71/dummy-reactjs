@@ -1,0 +1,11 @@
+# All of the configurables from Client app should be here
+# "generic" is for settings applicable to all modules
+# Other module specific sections are for settings applicable to specific modules
+
+generic:
+  # write your base_url of the API here
+  base_url: 'http://localhost:8000'
+
+accounts:
+  # Accounts related settings should be here
+  base_url : http://localhost:8000
